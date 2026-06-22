@@ -59,6 +59,12 @@ print("-" * 40)
 
 score = int(score / len(Questions) * 100)
 
+for i in range(len(Questions)):
+    print(f"Q{i+1}: Your guess: {guesses[i]}  |  Answer: {Answers[i]}")
+
+
+print("-" * 40)
+
 if score >= 60:
     print(f"you did quite well")
     print(f"Your score is {score}%")
